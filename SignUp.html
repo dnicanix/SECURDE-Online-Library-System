@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DLSU-SHS Online Library System</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea:400,400i,700|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class = "container">
+        <div class = "main-login main-center">
+           <div class = "row">
+               <p class = "title" style = "text-align:center;"> Senior High School (SHS) Online Library </p>
+               <p class = "important" style = "text-align:center; font-size:180%;"> Create an account </p>
+           </div>
+
+           <div class = "row">
+               <div class = "col-md-20">
+                   <form id = "form_signup">
+                   <div class="form-group row">
+                        <label for="label_name" id="label_name">Name</label>
+                        <input type="text" class="form-control" id="input_name">
+                    </div>
+                    <div class="form-group row">
+                        <label for="label_idn" id="label_idn">ID Number</label>
+                        <input type="text" class="form-control" id="input_idn">
+                    </div>
+                    <div class="form-group row">
+                        <label for="label_username" id="label_username">Username</label>
+                        <input type="text" class="form-control" id="input_username">
+                    </div>
+                    <div class="form-group row">
+                        <label for="label_password" id="label_password">Password</label>
+                        <input type="password" class="form-control" id="input_password">
+                    </div>
+                    <div class="form-group row">
+                        <label for="label_email" id="label_email">Email Address</label>
+                        <input type="text" class="form-control" id="input_email">
+                    </div>
+                    <div class="form-group row">
+                        <label for="label_birthday" id="label_birthday">Birthday</label>
+                        <input type="date" class="form-control" id="input_birthday">
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="label_question" id="label_question">Secret Question</label><div class="dropdown">
+                        <select id="dropdownQuestions">
+                          <option>---</option>
+                          <option>What is your favorite food</option>
+                          <option>Who is your favorite superhero</option>
+                          <option>Who is your crush</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="label_answer" id="label_answer">Answer</label>
+                        <input type="text" class="form-control" id="input_answer">
+                    </div>
+                    
+                    <button id = "btn_signup" type="button" class="btn btn-primary btn-sm"  style="float: right;">SIGN UP</button>
+                       
+                   </form>
+               </div>
+           </div>
+           
+           <div class = "row" style = "margin-top:30px;">
+               <p style = "text-align:center">Copyright (c) 2017 All Rights Reserved.</p>
+           </div>
+           <div class = "row">
+               <p style = "text-align:center">De La Salle University, Manila.</p>
+           </div>
+        </div>
+    </div>
+
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+</html>
