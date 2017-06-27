@@ -1,9 +1,40 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: black;
+}
+
+label{
+    font-weight:500;
+    font-size:14px;
+}
+
 .title{
     font-size: 30px;
     font-weight: 400; /* semi-bold */
 }
 
+
+/*** Button Modifications ***/
 .btn-primary{
     background-color: #63A771;
+    border-color: #95989A;
     width:250px;
 }
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary,
+.btn-primary:hover, .btn-primary.focus, .btn-primary:focus{
+    background-color: #003300; /* dark green */
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    background-color: #003300; /* dark green */
+}
+    
+.btn-primary:active:focus, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    border-color: #95989A;
+}
+

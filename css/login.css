@@ -3,8 +3,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-    font-family: 'Open Sans', sans-serif;
     background-size: cover;
+}
+
+/* Forgot Password & Sign Up */
+a{ 
+    font-size: 12px;
 }
 
 .main-login{
@@ -22,7 +26,7 @@ body{
 
 .main-center{
  	margin: 0 auto;
- 	max-width: 640px;
+ 	max-width: 600px;
     max-height: 415px;
     padding: 30px 30px;
     
@@ -38,18 +42,19 @@ body{
 
 #ic_dlsu{
     display: block;
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 30px;
     margin-right: auto;
 }
 
 #form_login{
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 30px;
 }
 
 #input_username, #input_password{
     width: 250px;
+    height: 30px;
 }
 
 #btn_login{
@@ -57,15 +62,11 @@ body{
     margin-left: -15px;
 }
 
-.btn-primary{
-    border-color: #95989A;
+#div_forgotpass_signup{
+    margin-left: 60px;
+    margin-top: 5px;
 }
 
-.btn-primary:active:focus, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #FFFFF;
-    border-color: #285e8e; /*set the color you want here*/
-}
 
 
 
