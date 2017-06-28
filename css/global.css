@@ -27,6 +27,13 @@ input{
     font-size: 20px;
 }
 
+.img_icons{
+    width:30px;
+    height:30px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
 
 /*** Button Modifications ***/
 .btn-primary{
