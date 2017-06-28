@@ -7,7 +7,7 @@ body{
     background-size: cover;
 }
 
-.main-login{
+.main-signup{
  	background-color: #E5E5E5;
     background: rgb(229, 229, 229); /* Fallback for older browsers without RGBA-support */
     background: rgba(229, 229, 229, 0.62);
@@ -19,14 +19,13 @@ body{
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 .main-center{
  	margin: 0 auto;
- 	max-width: 640px;
-    max-height: 700px;
+ 	max-width: 700px;
+    max-height: 680px;
     padding: 30px 30px;
     
-    /* to center vertically */s
+    /* to center vertically */
     position:absolute; /*it can be fixed too*/
     left:0; right:0;
     top:0; bottom:0;
@@ -36,34 +35,52 @@ body{
     overflow:auto;
 }
 
-#ic_dlsu{
-    display: block;
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-right: auto;
+#ic_archer{
+    margin-left:30px;
+    margin-top:50px;
 }
 
 #form_signup{
-    margin-top: 25px;
-    margin-left: 30px;
+    margin-top:10px;
+    margin-left: -30px;
 }
 
-#input_name, #input_idn, #input_username, #input_password, #input_email, #input_birthday, #dropdownQuestions, #input_answer{
-    width: 300px;
-    float: right;
-    margin-right: 75px;
+#label_name, #label_idnumber, #label_username, #label_password, #label_confirmpassword, #label_email, #label_birthday{
+    text-align:left;
 }
 
-#label_name, #label_idn, #label_username, #label_password, #label_email, #label_birthday, #label_question, #label_answer{
-    width: 120px;
-    float: left;
-    margin-left: 50px;
-    margin-top: 10px;
+#label_securityanswer{
+    margin-left:-65px;
+    margin-right:64px;
+}
+
+#input_name, #input_idnumber, #input_username, #input_password, #input_confirmpassword, #input_email, #input_birthday{
+    width:260px;
+}
+
+#input_firstname{
+    width:110px;
+    margin-left:15px;
+    margin-right:30px;
+}
+
+#input_middleinitial{
+    width:30px;
+    margin-right:30px;
+    padding:3px;
+}
+#input_lastname{
+    width:110px;
+}
+
+#select_securityquestion, #input_securityanswer{
+    width:364px;
 }
 
 #btn_signup{
     margin-top: -5px;
-    margin-right: 80px;
+    margin-left: 105px;
+    width:260px;
 }
 
 .btn-primary{

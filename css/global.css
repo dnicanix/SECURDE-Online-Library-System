@@ -1,6 +1,8 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    /* font-size: 14px; by default */
+    zoom: 0.8;
 }
 
 a{
@@ -12,9 +14,17 @@ label{
     font-size:14px;
 }
 
+input{
+    height: 30px;
+}
+
 .title{
     font-size: 30px;
     font-weight: 400; /* semi-bold */
+}
+
+.subtitle{
+    font-size: 20px;
 }
 
 
