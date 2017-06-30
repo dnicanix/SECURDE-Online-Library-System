@@ -391,7 +391,8 @@ body {
   box-shadow: none;
 }
 .sidebar-default {
-  background-color: #ffffff;
+    background-color: white;
+    opacity: 0.8;
 }
 .sidebar-default .sidebar-header {
   background-color: #ffffff; /* change bg color of the top of side nav bar*/
@@ -430,7 +431,7 @@ body {
 .sidebar-default .sidebar-nav li:hover > a,
 .sidebar-default .sidebar-nav li > a:hover {
   color: #212121;
-  background-color: #e0e0e0;
+  background-color: #B2CFBB;
 }
 .sidebar-default .sidebar-nav li:hover > a i,
 .sidebar-default .sidebar-nav li > a:hover i {
@@ -449,13 +450,13 @@ body {
 .sidebar-default .sidebar-nav > .open > a:hover,
 .sidebar-default .sidebar-nav > .open > a:focus {
   color: #212121;
-  background-color: #e0e0e0;
+  background-color: #B2CFBB;
 }
 .sidebar-default .sidebar-nav > .active > a,
 .sidebar-default .sidebar-nav > .active > a:hover,
 .sidebar-default .sidebar-nav > .active > a:focus {
   color: #212121;
-  background-color: #e0e0e0;
+  background-color: #B2CFBB;
 }
 .sidebar-default .sidebar-nav > .disabled > a,
 .sidebar-default .sidebar-nav > .disabled > a:hover,
@@ -610,7 +611,7 @@ body {
 .sidebar-colored .sidebar-nav li:hover > a,
 .sidebar-colored .sidebar-nav li > a:hover {
   color: #e91e63;
-  background-color: #e0e0e0;
+  background-color: #B2CFBB;
 }
 .sidebar-colored .sidebar-nav li:hover > a i,
 .sidebar-colored .sidebar-nav li > a:hover i {
