@@ -1,32 +1,5 @@
-body{
-    background-image: url("../img/bg_home.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    background-size: cover;
-    zoom: 0.90;
-}
-
-
-.jumbotron{
-    margin-top:-20px;   
-    margin-left: -50px;
-    margin-right: -48px;
-    width: 1235px;
-    background-color: #E4E4E4;
-    
-    padding-top: 0px;
-    padding-bottom:0px;
-    background-size: cover;
-    background: contain;
-    height: 80px; /* define the height in pixels or make sure   */
-                   /* you have something in your div with height */
-                   /* so you can see your image */
-}
-
 #div_readingmaterial{
     margin-top: 30px;
-    
 }
 
 .p_number{
