@@ -34,7 +34,6 @@ input{
     margin-right:20px;
 }
 
-
 /*** Button Modifications ***/
 .btn-primary{
     background-color: #63A771;
@@ -55,3 +54,7 @@ input{
     border-color: #95989A;
 }
 
+.pageheader{
+    font-size: 16px;
+    font-weight: 600; /* semi-bold */
+}
