@@ -43,6 +43,16 @@ input{
     margin-right:20px;
 }
 
+#img_studentreview{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #95989A;
+}
+
+.img_facultyreview{
+    
+}
+
 .jumbotron{
     margin-top:-20px;   
     margin-left: -50px;
@@ -64,7 +74,6 @@ input{
 .btn-primary{
     background-color: #63A771;
     border-color: #95989A;
-    width:250px;
 }
 
 .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary,
