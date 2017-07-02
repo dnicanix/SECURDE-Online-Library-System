@@ -68,8 +68,9 @@ input{
                    /* you have something in your div with height */
                    /* so you can see your image */
 }
-
-
+#table_meetingrooms>tbody>tr>td{
+    padding:10px;
+}
 /*** Button Modifications ***/
 .btn-primary{
     background-color: #63A771;

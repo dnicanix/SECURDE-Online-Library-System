@@ -1,0 +1,27 @@
+#table_meetingrooms{
+    width: 500px;
+    margin-top:30px;
+    background: rgba(255,255,255,0.50);
+    text-align: center;
+    padding: 10px;
+}
+
+#td_available{
+    font-weight: 800;
+    font-style: italic;
+    color:#297B3C;
+}
+
+#td_reserved{
+    font-weight: 800;
+    font-style: italic;
+    color:#F20707;
+}
+
+#button_reserve{
+    width: 150px;
+}
+
+.tr_empty{
+    height: 54.44px;
+}
