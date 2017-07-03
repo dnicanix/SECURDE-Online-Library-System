@@ -1,27 +1,45 @@
 #table_meetingrooms{
-    width: 500px;
+    width:900px;   
     margin-top:30px;
     background: rgba(255,255,255,0.50);
     text-align: center;
     padding: 10px;
+    font-size:12px;
+}
+
+th{
+    text-align: center;
 }
 
 #td_available{
     font-weight: 800;
     font-style: italic;
     color:#297B3C;
+    background-color: #297B3C;
 }
 
 #td_reserved{
     font-weight: 800;
     font-style: italic;
     color:#F20707;
+    background-color: #F20707;
 }
 
-#button_reserve{
+#button_reserve, #button_cancel{
     width: 150px;
 }
 
 .tr_empty{
     height: 54.44px;
+}
+
+.a_available{
+    display:block;
+    width:inherit;  
+    height: inherit;
+    text-decoration: none;
+}
+
+.well{
+    width:900px; 
 }

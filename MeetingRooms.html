@@ -14,6 +14,16 @@
     <link href="css/meetingrooms.css" rel="stylesheet">
     <link href="css/sidenavbar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <!-- For datepicker -->
+    <link href="css/datepicker.css" rel="stylesheet"> 
+    <script src = "js/jquery.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+      
+    <script>
+      $(function(){
+            $('.datepicker').datepicker();
+        });
+    </script>
   </head>
   <body class = "body_home">
     <!-- Overlay for fixed sidebar -->
@@ -63,7 +73,7 @@
         <!-- Sidebar text -->
         <!--  <div class="sidebar-text">Text</div> -->
     </aside>
-    
+
     <div class="wrapper">
         <!-- Sidebar Constructor -->
         <div class="constructor">
@@ -76,66 +86,101 @@
                 <p class="pageheader">> Meeting Rooms</p>
             </div>
             <center>
+            <div class = "well">
+            <input class = "datepicker" type = "text" name = "date">
+            </div>
+            Meeting Room Reservations for TODAY 07/04/2017
             <table id = "table_meetingrooms" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th> # </th>
-                        <th> Availability </th>
-                        <th> Date and Time Available </th>
-                        <th> </th>
+                        <th>  </th>
+                        <th> 9:00 AM - 11:00 AM </th>
+                        <th> 11:00 AM - 1:00 PM </th>
+                        <th> 1:00 PM - 3:00 PM </th>
+                        <th> 3:00 PM - 5:00 PM </th>
+                        <th> 5:00 PM - 7:00 PM </th>
+                        <th> 7:00 PM - 8:00 PM </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td> 123 </td>
-                        <td id = "td_available"> AVAILABLE </td>
-                        <td> --- </td>
-                        <td> <button id = "button_reserve" type="button" class="btn btn-default">RESERVE</button> </td>
+                        <td id = "td_available"><a id = "123 9:00AM-11:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "123 11:00AM-1:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "123 1:00PM-3:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "123 3:00AM-5:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "123 5:00AM-7:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_reserved"></td>
                     </tr>
                     <tr>
                         <td> 456 </td>
-                        <td id = "td_reserved"> RESERVED </td>
-                        <td> 04/22/2017 8:00 PM </td>
-                        <td> <button id = "button_reserve" type="button" class="btn btn-default" disabled="true">RESERVE</button> </td>
+                        <td id = "td_available"><a id = "456 9:00AM-11:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "456 11:00AM-1:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "456 1:00PM-3:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "456 3:00AM-5:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "456 5:00AM-7:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_reserved"></td>
                     </tr>
                     <tr>
                         <td> 789 </td>
-                        <td id = "td_available"> AVAILABLE </td>
-                        <td> --- </td>
-                        <td> <button id = "button_reserve" type="button" class="btn btn-default">RESERVE</button> </td>
+                        <td id = "td_available"><a id = "789 9:00AM-11:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "789 11:00AM-1:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "789 1:00PM-3:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "789 3:00AM-5:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "789 5:00AM-7:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_reserved"></td>
                     </tr>
                     <tr>
                         <td> 901 </td>
-                        <td id = "td_reserved"> RESERVED </td>
-                        <td> 04/22/2017 8:00 PM </td>
-                        <td> <button id = "button_reserve" type="button" class="btn btn-default" disabled="true">RESERVE</button> </td>
+                        <td id = "td_available"><a id = "901 9:00AM-11:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "901 11:00AM-1:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "901 1:00PM-3:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "901 3:00AM-5:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "901 5:00AM-7:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_reserved"></td>
                     </tr>
                     <tr>
                         <td> 234 </td>
-                        <td id = "td_available"> AVAILABLE </td>
-                        <td> 04/22/2017 8:00 PM </td>
-                        <td> <button id = "button_reserve" type="button" class="btn btn-default">RESERVE</button> </td>
+                        <td id = "td_available"><a id = "234 9:00AM-11:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "234 11:00AM-1:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "234 1:00PM-3:00PM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "234 3:00AM-5:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_available"><a id = "234 5:00AM-7:00AM" class = "a_available" data-toggle="collapse" href="#collapse_reserve" aria-expanded="false" aria-controls="collapse_reserve">&nbsp;</a> </td>
+                        <td id = "td_reserved"></td>
                     </tr>
                 </tbody>
             </table>
+            <div class="collapse" id="collapse_reserve">
+              <div class="well">
+                <p id = "p_reserve">Do you want to reserve room?</p><button id = "button_reserve" type="button" class="btn btn-default">YES</button> <button id = "button_cancel" type="button" class="btn btn-default" data-dismiss = "collapse" target="#collapse_reserve" data-dismiss="collapse">CANCEL</button>
+              </div>
+            </div>
             </center>
-    
-           <div class = "row" style = "margin-top:140px">
-               <p style = "text-align:center">Copyright (c) 2017 All Rights Reserved.</p>
-           </div>
-           <div class = "row">
-               <p style = "text-align:center">De La Salle University, Manila.</p>
-           </div>
 
         </div>
       </div>
+      
+    <!--- RESERVE MODAL --->
+      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sidenavbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-
+    <script>
+        $(document).ready(function() {
+            $("a.a_available").click(function(event) {
+                alert(event.target.id);
+                $("#collapse_reserve").show();
+                $('p#p_reserve').text('Do you want to reserve room ' + event.target.id + " timeslot?");
+            });
+            
+            $("#button_cancel").click(function(event) {
+                $("#collapse_reserve").hide();
+            });
+        });
+    </script>
   </body>
   
 </html>
