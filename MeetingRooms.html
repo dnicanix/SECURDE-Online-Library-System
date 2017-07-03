@@ -13,17 +13,10 @@
     <link href="css/global.css" rel="stylesheet">
     <link href="css/meetingrooms.css" rel="stylesheet">
     <link href="css/sidenavbar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-    <!-- For datepicker -->
-    <link href="css/datepicker.css" rel="stylesheet"> 
-    <script src = "js/jquery.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-      
-    <script>
-      $(function(){
-            $('.datepicker').datepicker();
-        });
-    </script>
+
+
   </head>
   <body class = "body_home">
     <!-- Overlay for fixed sidebar -->
@@ -86,10 +79,17 @@
                 <p class="pageheader">> Meeting Rooms</p>
             </div>
             <center>
-            <div class = "well">
-            <input class = "datepicker" type = "text" name = "date">
-            </div>
-            Meeting Room Reservations for TODAY 07/04/2017
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class = "col-sm-4"></div>
+                    <div class = "col-sm-2">
+                        <label class="col-sm-2 control-label" id = "label_name">Date:</label>                 
+                    </div>    
+                    <div class="col-sm-6" style = "text-align:left;">
+                        <input style="width:150px;" type="text" class="form-control" id="dailydate" name="dailydate" />
+                    </div>
+                </div>
+            </form>
             <table id = "table_meetingrooms" class="table table-bordered">
                 <thead>
                     <tr>
@@ -160,15 +160,23 @@
         </div>
       </div>
       
-    <!--- RESERVE MODAL --->
-      
+    <!-- For datepicker -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/sidenavbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-    <script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var currDate = moment.currDate;
+
+            $('input[name="dailydate"]').daterangepicker({
+              singleDatePicker: true,
+              showDropdowns: true,
+              value: currDate
+            });
+        });
+        
         $(document).ready(function() {
             $("a.a_available").click(function(event) {
                 alert(event.target.id);
@@ -181,6 +189,11 @@
             });
         });
     </script>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/sidenavbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
   </body>
   
 </html>
